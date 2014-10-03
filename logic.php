@@ -24,19 +24,30 @@ $word_list = Array(
 	20 => 'Question',
 	);
 
-$test = $_GET["wordcount"];
+$passwordcount = $_GET["wordcount"];
+$symbol = $_GET["symbol"];
+$number = $_GET["number"];
 
-if($test==0){
-	echo("It looks like you didn't enter any words, or put zero. You need at least one word for a password.");
+/* Code to use on index page, here for testing
+if($passwordcount==0){
+	echo("It looks like you didn't ask for a number of words, or put zero. You need at least one word for a password.");
 }
-else if($test>=10){
+
+else if($passwordcount>=10){
 	echo("Ten or more words is too many! Sorry about that. You probably wouldn't want to memorize ten+ words though anyway...");
 }
-else if($test<=9){
-	for($i=1; $i<=$test; $i++){
-	echo($word_list[rand(0,20)]." ");
+
+else if($passwordcount<=9){
+	for($i=1; $i<=$passwordcount; $i++){
+	echo(" ".$word_list[rand(0,20)]);
 }
+	if($symbol=="Yes"){
+		echo("@");
+	}
+	if($number=="Yes"){
+		echo(rand(0,10));
+	}
+
 }
-/*foreach($_GET as $key => $value){
-	echo($value);
-}*/
+*/
+

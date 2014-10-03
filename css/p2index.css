@@ -1,0 +1,46 @@
+/* CSS Document */
+body {
+	background-color:gray;
+}
+
+h1 {
+	color:#2A2A2A;
+}
+#outer {
+	background-color:#F0F0F0;
+}
+
+#wrapper{
+	background-color: #F0F0F0;
+}
+
+#header{
+	text-align: center;
+}
+
+#password p{
+	font-size: 21px;
+	color: green;
+	text-align: center;
+}
+
+#about{
+	text-align: justify;
+	margin-right: 200px;
+	margin-left: 10px;
+}
+
+#form{
+	padding-left:10px;
+}
+#xkcdimage{
+	margin-left:350px;
+	margin-right: 290px;
+}
+#xkcdimage h2{
+	text-align: center;
+}
+.comic {
+	height:450px;
+	width:450px;
+}
